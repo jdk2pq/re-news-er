@@ -15,3 +15,7 @@ To use this script, simply copy `.env.template` to `.env` and add your login cre
 There is support for adding multiple accounts by just appending new objects to the list, so feel free to add as many accounts as you'd like.
 
 Then, just run `pnpm run start`, and the script should take care of the rest!
+
+## Warning!
+
+Using this script _may_ get your IP blocked by bot detection scripts on both sites (but it shouldn't affect your user account). I've seen this most frequently on the NY Times site. Luckily, it seems like changing your IP or waiting a day or so gets you unblocked.
