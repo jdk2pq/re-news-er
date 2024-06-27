@@ -1,21 +1,25 @@
-# Re-news-er
+# Re-news-er 🗞️
 
-Automate renewing your free subscriptions to the NY Times and The Washington Post!
+Do you have a DC Library Card? Then use this script to automate renewing your free subscriptions to the NY Times and The Washington Post! 📖🤓📰
 
-## Why script this?
+## Why script this? 👨‍💻
 
-In DC, all DC Library Card members get free access to the NY Times and the Washington Post.
+An awesome benefit of having a DC Library Card is that you can get free access to the NY Times and the Washington Post!
 
-However, Access to the NY Times must be refreshed every day, while access to the Washington Post must be refreshed every 7 days. I'm lazy, and a programmer, so I wrote a script to go click the right links and log in to my accounts for me so that I don't go a day without having my subscription available.
+However, there are limits. On the NY Times, the subscription only lasts for **one day**. The Washington Post subscription is a little better, but it still only lasts for **seven days**. 
 
-## How to use the script
+I'm a lazy programmer who doesn't want to go through the effort of clicking the links on the DC Library's site to renew my subscriptions each day/week, so I wrote a script to do that for me. Now, I don't go a day without having my subscriptions!
 
-To use this script, simply copy `.env.template` to `.env` and add your login credentials to their respective env var.
+## How to use the script 🪄
 
-There is support for adding multiple accounts by just appending new objects to the list, so feel free to add as many accounts as you'd like.
+To use this script:
 
-Then, just run `pnpm run start`, and the script should take care of the rest!
+1. Copy `.env.template` to `.env` and add your login credentials to their respective env var.
+2. Run `pnpm install` (or your package manager of choice, but I used `pnpm` and recommend you do too!)
+3. Run `pnpm run start`.
 
-## Warning!
+The script supports adding multiple accounts by just appending new objects to the arrays in your `.env` file, so feel free to add as many accounts as you'd like.
 
-Using this script _may_ get your IP blocked by bot detection scripts on both sites (but it shouldn't affect your user account). I've seen this most frequently on the NY Times site. Luckily, it seems like changing your IP or waiting a day or so gets you unblocked.
+## Warning! ⚠️
+
+Using this script _may_ get your IP blocked by bot detection scripts on both sites (but it shouldn't affect your user account). I've seen this most frequently on the NY Times site, and they'll usually give you some kind of captcha to solve to prove you aren't a robot. I'm still hacking away at trying to solve those captchas with this script, but luckily, it seems like the block is temporary, and changing your IP or waiting a day or so gets you unblocked.
