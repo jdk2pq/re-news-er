@@ -11,6 +11,9 @@ importers:
       dotenv:
         specifier: ^16.4.5
         version: 16.4.5
+      fingerprint-generator:
+        specifier: ^2.1.52
+        version: 2.1.52
       fingerprint-injector:
         specifier: ^2.1.52
         version: 2.1.52(puppeteer@22.12.1(typescript@5.5.2))

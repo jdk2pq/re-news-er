@@ -14,6 +14,7 @@
   "packageManager": "pnpm@9.4.0",
   "dependencies": {
     "dotenv": "^16.4.5",
+    "fingerprint-generator": "^2.1.52",
     "fingerprint-injector": "^2.1.52",
     "jimp": "^0.22.12",
     "opencv-wasm": "4.3.0-10",
