@@ -14,9 +14,10 @@ I'm a lazy programmer who doesn't want to go through the effort of clicking the 
 
 To use this script:
 
-1. Copy `.env.template` to `.env` and add your login credentials to their respective env var.
-2. Run `pnpm install` (or your package manager of choice, but I used `pnpm` and recommend you do too!)
-3. Run `pnpm run start`.
+1. Clone this repo with `git clone git@github.com:jdk2pq/re-news-er.git && cd re-news-er`.
+2. Copy `.env.template` to `.env` and add your login credentials to their respective env var.
+3. Run `pnpm install` (or your package manager of choice, but I use `pnpm` and recommend you do too).
+4. Run `pnpm run start`.
 
 The script supports adding multiple accounts by just appending new objects to the arrays in your `.env` file, so feel free to add as many accounts as you'd like.
 
