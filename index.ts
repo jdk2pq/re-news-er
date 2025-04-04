@@ -13,7 +13,7 @@ dotenv.config();
  * to get recognized as a bot and be blocked if you run this script headless, so watch out!
  */
 const NYT_HEADLESS = false;
-const WAPO_HEADLESS = false;
+const WAPO_HEADLESS = true;
 
 async function setupBrowser(headless: boolean)  {
   const browser = await puppeteer.launch({ headless, args: [
@@ -132,9 +132,9 @@ async function renewAccounts() {
     console.error('ERROR: No accounts configured in your .env file! Exiting...\n')
     process.exit(1);
   }
-  // if (process.env.NYT_ACCOUNTS) {
-  //   await autoRenewNYT();
-  // }
+  if (process.env.NYT_ACCOUNTS) {
+    await autoRenewNYT();
+  }
   if (process.env.WAPO_ACCOUNTS) {
     await autoRenewWaPo();
   }
